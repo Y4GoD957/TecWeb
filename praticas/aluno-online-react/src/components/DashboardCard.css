@@ -1,0 +1,26 @@
+.card {
+  background-color: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+  padding: 20px 24px;
+}
+
+.card h4 {
+  color: var(--cor-destaque);
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+
+.card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style-position: inside;
+}
+
+@media (width <= 768px) {
+  .card {
+    padding: 18px;
+  }
+}

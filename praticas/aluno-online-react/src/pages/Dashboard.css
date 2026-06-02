@@ -1,0 +1,38 @@
+.layout {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-content h3 {
+  color: var(--cor-texto);
+  font-size: 1.6rem;
+}
+
+@media (width <= 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .dashboard-content h3 {
+    font-size: 1.4rem;
+  }
+}
