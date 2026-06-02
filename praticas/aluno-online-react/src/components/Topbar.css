@@ -1,0 +1,35 @@
+.top-bar {
+  align-items: center;
+  background-color: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 24px;
+}
+
+.top-bar h2 {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  gap: 12px;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 42px;
+  object-fit: cover;
+  width: 42px;
+}
+
+@media (width <= 768px) {
+  .top-bar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .top-bar h2 {
+    font-size: 1.3rem;
+  }
+}
